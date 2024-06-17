@@ -29,7 +29,7 @@
         <video controls autoplay muted loop>
             <source src="assets/media/1.mp4" type="video/mp4">
         </video>
-        <video controls autoplay muted loop>
+        <video controls autoplay muted loop class="vdo">
             <source src="assets/media/fd5acf6f92e38caaba99381e5366d031_t4.mp4" type="video/mp4">
         </video>
     </div>
@@ -46,6 +46,7 @@
     <script>
         const ham = document.querySelector('.ham')
         const menu = document.querySelector('.bg')
+        const video = document.querySelector('.vdo')
 
         let flag = 0
         ham.addEventListener('click', function () {
@@ -57,13 +58,18 @@
                 sp[1].style.opacity = '1'
                 sp[0].style.transform = 'rotate(0deg)'
                 sp[2].style.transform = 'rotate(0deg)'
-
+                video.style.transform='translate(0px)'
+                video.style.transition='1.3s'
+                video.classList.remove('hide')
             }
             else {
                 sp[1].style.transform = 'translateX(100px)'
                 sp[1].style.opacity = '0'
                 sp[0].style.transform = 'rotate(43deg)'
                 sp[2].style.transform = 'rotate(-43deg)'
+                video.style.transform='translate(-700px)'
+                video.style.transition='1.3s'
+                video.classList.add('hide')
             }
             flag++
         })
