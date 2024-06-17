@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/master.css">    
+    <link rel="stylesheet" href="assets/font/bootstrap-icons.css">
+</head>
+
+<body>
+       <!-- start bottomFixedImage -->
+       <div class="bottomImage">
+        <figure class="imgFixed"><img src="assets/img/img/4.jpg" alt="">
+            <a href="https://github.com/zohreFaraji"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/zohre-faraji-41822315a/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/zohrefaraji212/"><i class="bi bi-instagram"></i></a>
+        </figure>
+    </div>
+    <!-- end bottomFixedImage -->
+    <h1>trick hamburger menu</h1>
+    <div class="ham">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="video">
+        <video controls autoplay muted loop>
+            <source src="assets/media/1.mp4" type="video/mp4">
+        </video>
+        <video controls autoplay muted loop>
+            <source src="assets/media/fd5acf6f92e38caaba99381e5366d031_t4.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="bg hide">
+        <ul class="menu">
+            <li><a href="">Websites</a></li>
+            <li><a href="">Digital Marketing</a></li>
+            <li><a href="">Industries</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+        </ul>
+    </div>
+    <script>
+        const ham = document.querySelector('.ham')
+        const menu = document.querySelector('.bg')
+
+        let flag = 0
+        ham.addEventListener('click', function () {
+            menu.classList.toggle('hide')
+
+            const sp = this.children
+            if (flag % 2) {
+                sp[1].style.transform = 'translateX(0px)'
+                sp[1].style.opacity = '1'
+                sp[0].style.transform = 'rotate(0deg)'
+                sp[2].style.transform = 'rotate(0deg)'
+
+            }
+            else {
+                sp[1].style.transform = 'translateX(100px)'
+                sp[1].style.opacity = '0'
+                sp[0].style.transform = 'rotate(43deg)'
+                sp[2].style.transform = 'rotate(-43deg)'
+            }
+            flag++
+        })
+    </script>
+</body>
+
+</html>
