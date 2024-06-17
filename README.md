@@ -1,6 +1,7 @@
 # pop-up
 
-![3](https://github.com/zohreFaraji/hamburger-menu030328/assets/165832749/a6e6f212-e4ed-4c3d-8934-3892d8de1c4b)
+![15](https://github.com/zohreFaraji/hamburger-menu030328/assets/165832749/2dd7fb1b-8cd6-4d55-b614-58463009e8e9)
+![12](https://github.com/zohreFaraji/hamburger-menu030328/assets/165832749/a2e1e4f5-1fc8-4fe8-81f9-2d2b7ba20b64)
 
 **You can see information about my project**
 - [Demo Project](https://zohrefaraji.github.io/hamburger-menu030328/)
